@@ -7,40 +7,53 @@
     <title>Recept</title>
 </head>
 <body>
-<!--Header--><!--Menu Bar-->
-<header>
-    <h1>Karens Cookbook</h1>
-    <p>A selection of Karens best alltime recipes.</p>
-    <nav>
-        <div class="navlinks">
-            <a href="#">DINNER</a>
-            <a href="#">BAKING</a>
-            <a href="#">DRINKS</a>
+<section class="grid-container-recept">
+    <!--Header & Menu Bar-->
+    <header>
+        <h1>Karens Cookbook</h1>
+        <p><i>A selection of Karens best alltime recipes.</i></p>
+        <nav>
+            <div class="navlinks">
+                <a href="#">DINNER</a>
+                <a href="#">BAKING</a>
+                <a href="#">DRINKS</a>
+            </div>
+            <div class="navsearch">
+                <img src="img/search.png" alt="search"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <main class="recipe-content">
+        <img src="img/couscous.jpg" alt="Couscous">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </ul>
         </div>
-        <div class="navicons">
-            <a href="#"><img src="img/search.png" alt="search"></a>
-            <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-        </div>
-    </nav>
-</header>
-
-<!--Main content-->
-<main class="recipe-content">
-
-</main>
+        <div class="directions"></div>
+            <h2>Directions</h2>
+    </main>
 
 
-<!--    Footer-->
-<footer>
-    <h2>Connect with us!</h2>
-    <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-    <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-    <form>
-        <p>Subscribe to our newsletter:</p>
-        <label for="email"></label><input id="email" type="email" placeholder="E-mailaddress"><input type="submit" value="Submit">
-    </form>
-</footer>
-
+    <!--    Footer-->
+    <footer>
+        <h2>Connect with us!</h2>
+        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+        <form>
+            <label for="email">Subscribe to our newsletter:</label><br>
+            <input id="email" type="email" placeholder="E-mailaddress"><input type="submit" value="Submit">
+        </form>
+    </footer>
+</section>
+<script src="js/javascript.js"></script>
 </body>
 </html>

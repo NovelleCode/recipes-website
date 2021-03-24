@@ -11,13 +11,22 @@ body {
     background-color: #FFF5E8;
 }
 
-.grid-container {
+.grid-container-index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "header"
             "recipes-container"
             "footer";
 }
+
+.grid-container-recept {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+            "recipe-content"
+            "footer";
+}
+
 
 h1 {
     font-size: 40px;
@@ -27,11 +36,17 @@ h1 {
 
 h2 {
     font-size: 20px;
+    padding: 10px;
+    margin: 0;
 }
 
 p {
     font-size: 15px;
     line-height: 1.6;
+}
+
+ul {
+
 }
 
 input {
@@ -103,7 +118,7 @@ footer img:hover {
 
 .recipes-container {
     grid-area: recipes-container;
-    width: 500px;
+    width: 100%;
     margin: 20px auto;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
@@ -115,7 +130,7 @@ footer img:hover {
     position: relative;
     /*flex: 1 0 50%;*/
     /*flex-basis: 33.3%;*/
-    /*margin: 12px 12px 12px 12px;*/
+    margin: 0 auto;
     text-align: center;
     background-color: white;
     max-width: 500px;
@@ -136,6 +151,18 @@ footer img:hover {
     opacity: 1;
 }
 
+.recipe-content {
+    background-color: white;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.recipe-content img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     * {
@@ -148,7 +175,7 @@ footer img:hover {
         background-color: #FFF5E8;
     }
 
-    .grid-container {
+    .grid-container-index {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "header"
@@ -267,6 +294,12 @@ footer img:hover {
         width: 100%;
         opacity: 1;
     }
+
+    .recipe-content {
+        background-color: white;
+        width: 750px;
+        margin: 20px auto;
+    }
 }
 
 
@@ -306,5 +339,11 @@ footer img:hover {
 
     .recipe:hover .overlay {
         opacity: 1;
+    }
+
+    .recipe-content {
+        background-color: white;
+        width: 800px;
+        margin: 20px auto;
     }
 }
