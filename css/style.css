@@ -41,16 +41,30 @@ h2 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 ul {
+    margin: 10px 0 20px;
+}
 
+li {
+    font-size: 16px;
+}
+
+::marker {
+    color: #43664D;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin: 10px;
 }
 
 input {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 header {
@@ -94,7 +108,7 @@ nav img:hover {
 footer {
     background-color: #43664D;
     color: #FFFFFF;
-    padding: 50px 0;
+    padding: 25px 0;
     text-align: center;
 }
 
@@ -157,11 +171,29 @@ footer img:hover {
     margin: 20px auto;
 }
 
-.recipe-content img {
+.recipe-image {
     position: relative;
     max-width: 100%;
     height: auto;
 }
+
+.recipe-image-overlay::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    margin-top: -800px;
+    height: 800px;
+    width: 100%;
+    content: '';
+}
+
+/*.image-overlay {*/
+/*    background-image:*/
+/*            linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("./img/couscous.jpg");*/
+/*    width: 80%;*/
+/*    height: 400px;*/
+/*    background-size: cover;*/
+/*}*/
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -181,21 +213,6 @@ footer img:hover {
         grid-template-areas: "header"
             "recipes-container"
             "footer";
-    }
-
-    h1 {
-        font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 15px;
-        line-height: 1.6;
     }
 
     header {
@@ -305,6 +322,40 @@ footer img:hover {
 
 /* Desktop */
 @media screen and (min-width: 1211px) {
+
+    h1 {
+        font-size: 42px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 20px;
+        display: block;
+        margin: 10px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 25px;
+    }
+
     nav a:hover {
         text-decoration: underline;
     }
