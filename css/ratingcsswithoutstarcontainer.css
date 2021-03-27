@@ -5,24 +5,13 @@ body {
 }
 
 .rating {
-    display: flex;
-    justify-content: center;
-    /*width: 800px;*/
-    height: 54px;
-    margin: 20px auto;
-}
-
-#submit-rating {
-    display: block;
-    margin-block: auto;
-    margin-left: 34%;
-}
-
-.star-container {
     position: absolute;
     display: flex;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    justify-content: center;
     flex-direction: row-reverse;
-    align-self: center;
 }
 
 .star-input {
@@ -52,13 +41,13 @@ body {
     display: block;
     font-size: 35px;
     color: #43664D;
-    top: 10px;
+    top: 0;
     opacity: 0;
     transition: .2s;
     text-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
-.star-container label:hover:after,
-.star-container label:hover ~ label:after,
-.star-container input:checked ~ label:after {
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
     opacity: 1;
 }
