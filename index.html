@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/4609915796.js"></script>
     <title>Karens Cookbook</title>
 </head>
 
@@ -14,11 +15,12 @@
         <h1>Karens Cookbook</h1>
         <p>A selection of Karens best alltime recipes.</p>
         <nav>
-            <div class="navlinks">
-                <a href="#">DINNER</a>
-                <a href="#">BAKING</a>
-                <a href="#">DRINKS</a>
-            </div>
+            <ul class="navlinks">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">DINNER</a></li>
+                <li><a href="#">BAKING</a></li>
+                <li><a href="#">DRINKS</a></li>
+            </ul>
             <div class="navsearch">
                 <a href="#"><img src="img/search.png" alt="search"></a>
             </div>
@@ -57,11 +59,15 @@
 <!--    Footer-->
     <footer>
         <h2>Connect with us!</h2>
-        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-        <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-        <form>
-            <label for="email">Subscribe to our newsletter:</label><br>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f" style="font-size:20px;color:white"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram" style="font-size:26px;color:white"></i></a></li>
+        </ul>
+
+        <form id="newsletterForm">
+            <label for="email">Subscribe to our newsletter:</label>
             <input id="email" type="email" placeholder="E-mailaddress"><input type="submit" value="Submit">
+            <p id="newsletterOutput"></p>
         </form>
     </footer>
 </section>
