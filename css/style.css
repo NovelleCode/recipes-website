@@ -52,15 +52,7 @@ p {
     margin: 0;
 }
 
-ul {
-    margin: 10px 0 20px;
-}
-
-li {
-    font-size: 16px;
-}
-
-::marker {
+.ingredients ::marker, .directions ::marker {
     color: #43664D;
 }
 
@@ -223,13 +215,14 @@ footer li {
     text-align: center;
 }
 
-/*.image-overlay {*/
-/*    background-image:*/
-/*            linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("./img/couscous.jpg");*/
-/*    width: 80%;*/
-/*    height: 400px;*/
-/*    background-size: cover;*/
-/*}*/
+.ingredients li, .directions li {
+    line-height: 1.6;
+}
+
+.ingredients, .directions {
+    margin-top: 0;
+}
+
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {

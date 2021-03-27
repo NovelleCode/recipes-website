@@ -1,0 +1,36 @@
+/*.rating-section{*/
+/*    font-size: 0;*/
+/*}*/
+.star-section{
+    display: inline-block;
+    font-size: 1rem;
+}
+.rating:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.star-icon{
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: gold;
+}
+.star-icon:last-child{
+    padding-left: 0;
+}
+
+.star-input{
+    display: none;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > label.selected:before,
+.rating > label.selected ~ label:before {
+    color: #f0ad4e;
+    background: #f0ad4e;
+    -webkit-text-fill-color: transparent;
+    font: 24px/1 FontAwesome;
+    display: block;
+    content: "\f005";
+}
