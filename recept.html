@@ -15,7 +15,7 @@
         <p>A selection of Karens best alltime recipes.</p>
         <nav>
             <ul class="navlinks">
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#">DINNER</a></li>
                 <li><a href="#">BAKING</a></li>
                 <li><a href="#">DRINKS</a></li>
@@ -56,13 +56,15 @@
             <h3>Leave your rating:</h3>
             <form class="rating">
                 <div class="star-container">
-                    <input type="radio" name="star" class="star-input" id="star1" value="1"> <label for="star1"></label>
-                    <input type="radio" name="star" class="star-input" id="star2" value="2"> <label for="star2"></label>
-                    <input type="radio" name="star" class="star-input" id="star3" value="3"> <label for="star3"></label>
-                    <input type="radio" name="star" class="star-input" id="star4" value="4"> <label for="star4"></label>
                     <input type="radio" name="star" class="star-input" id="star5" value="5"> <label for="star5"></label>
+                    <input type="radio" name="star" class="star-input" id="star4" value="4"> <label for="star4"></label>
+                    <input type="radio" name="star" class="star-input" id="star3" value="3"> <label for="star3"></label>
+                    <input type="radio" name="star" class="star-input" id="star2" value="2"> <label for="star2"></label>
+                    <input type="radio" name="star" class="star-input" id="star1" value="1"> <label for="star1"></label>
                 </div>
+                <input type="submit" value="Submit" id="submit-rating">
             </form>
+            <p id="rating-output"></p>
         </section>
     </main>
 

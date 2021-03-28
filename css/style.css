@@ -190,6 +190,7 @@ footer li {
     background-color: white;
     width: 100%;
     margin: 20px auto;
+    padding-bottom: 10px;
 }
 
 .recipe-image {
@@ -229,21 +230,20 @@ footer li {
     display: flex;
     justify-content: center;
     /*width: 800px;*/
-    height: 54px;
-    margin: 20px auto;
+    height: 90px;
+    margin: 0 auto 10px;
 }
 
 #submit-rating {
-    display: block;
-    margin-block: auto;
-    margin-left: 34%;
+    display: flex;
+    align-self: flex-end;
 }
 
 .star-container {
     position: absolute;
     display: flex;
     flex-direction: row-reverse;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .star-input {
@@ -282,6 +282,10 @@ footer li {
 .star-container label:hover ~ label:after,
 .star-container input:checked ~ label:after {
     opacity: 1;
+}
+
+#rating-output {
+    text-align: center;
 }
 
 /* Tablet */
@@ -416,6 +420,7 @@ footer li {
         background-color: white;
         width: 750px;
         margin: 20px auto;
+        padding-bottom: 10px;
     }
 }
 
@@ -498,5 +503,6 @@ footer li {
         background-color: white;
         width: 800px;
         margin: 20px auto;
+        padding-bottom: 10px;
     }
 }
