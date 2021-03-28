@@ -52,7 +52,7 @@ p {
     margin: 0;
 }
 
-.ingredients ::marker, .directions ::marker {
+.ingredients ::marker, .couscousingredients::marker, .directions ::marker {
     color: #43664D;
 }
 
@@ -216,11 +216,11 @@ footer li {
     text-align: center;
 }
 
-.ingredients li, .directions li {
+.ingredients li, .couscousingredients li,  .directions li {
     line-height: 1.6;
 }
 
-.ingredients, .directions {
+.ingredients, .couscousingredients, .directions {
     margin-top: 0;
 }
 

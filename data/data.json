@@ -1,0 +1,48 @@
+{
+  "ingredients": [
+    {
+      "quantity": "2 dl",
+      "ingredientname": "pearlcouscous"
+    },
+    {
+      "quantity": "1",
+      "ingredientname": "vegetable bouillon cube"
+    },
+    {
+      "quantity": "400 gr",
+      "ingredientname": "cherrytomatoes"
+    },
+    {
+      "quantity": "1",
+      "ingredientname": "red onion"
+    },
+    {
+      "quantity": "1 tbsp",
+      "ingredientname": "lemon zest"
+    },
+    {
+      "quantity": "2 tbsp",
+      "ingredientname": "fresh pressed lemon juice"
+    },
+    {
+      "quantity": "2 dl",
+      "ingredientname": "freshly cut parsley"
+    },
+    {
+      "quantity": "200 gr",
+      "ingredientname": "halloumi"
+    },
+    {
+      "quantity": "1 tbsp",
+      "ingredientname": "honey"
+    },
+    {
+      "quantity": "2 tbsp",
+      "ingredientname": "sesame seeds"
+    },
+    {
+      "quantity": "2 dl",
+      "ingredientname": "olive oil"
+    }
+  ]
+}

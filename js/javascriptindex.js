@@ -1,10 +1,7 @@
 const elNewsLetterForm = document.querySelector('#newsletterForm');
 const elEmail = document.querySelector('#email');
 const elNewsletterOutput = document.querySelector('#newsletterOutput');
-const elRatingForm = document.querySelector('.rating');
-const elStars = document.querySelectorAll('input[name="star"]');
-const elRatingOutput = document.querySelector('#rating-output');
-// const elSubmitRating = document.querySelector('#submit-rating');
+
 
 function validateEmail(event) {
     let email = elEmail.value;
@@ -17,18 +14,5 @@ function validateEmail(event) {
     }
 }
 
-function ratingOutput(event) {
-    for(let i = 0; i < elStars.length; i++) {
-        if(elStars[i].checked) {
-            elRatingOutput.textContent = 'You give this recipe ' + elStars[i].value + ' stars.'
-            break;
-        }
-    }
-    event.preventDefault();
-}
-
 elNewsLetterForm.addEventListener('change', validateEmail);
-elRatingForm.addEventListener('change', ratingOutput);
-
-
 
