@@ -5,7 +5,7 @@ const elNewsLetterForm = document.querySelector('#newsletterForm');
 const elEmail = document.querySelector('#email');
 const elNewsletterOutput = document.querySelector('#newsletterOutput');
 
-
+// Newsletter validation
 function validateEmail(event) {
     let email = elEmail.value;
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -25,7 +25,7 @@ elNewsLetterForm.addEventListener('change', validateEmail);
 function favoriteDish(event) {
     let input = elFavoriteDishInput.value;
     if(input === 'couscous') {
-        localStorage.setItem('couscous', 'We found a recipe for your favorite dish :D <a href="../couscous.html">Click here!</a>');
+        localStorage.setItem('couscous', 'We found a recipe for your favorite dish :) <a href="../couscous.html">Click here!</a>');
     } else {
         localStorage.setItem(input, 'We do not have a recipe for this dish');
     }
