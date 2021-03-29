@@ -16,6 +16,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: "header"
             "recipes-container"
+            "favorite-dish"
             "footer";
 }
 
@@ -26,7 +27,6 @@ body {
             "recipe-content"
             "footer";
 }
-
 
 h1 {
     font-size: 40px;
@@ -50,10 +50,6 @@ p {
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
-}
-
-.ingredients ::marker, .couscousingredients::marker, .directions ::marker {
-    color: #43664D;
 }
 
 label {
@@ -161,6 +157,17 @@ footer li {
     background-color: #FFF5E8;
 }
 
+.favorite-dish {
+    grid-area: favorite-dish;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 20px;
+    background-color: #FFF5E8;
+
+}
+
 .recipe {
     position: relative;
     /*flex: 1 0 50%;*/
@@ -216,6 +223,10 @@ footer li {
     text-align: center;
 }
 
+.ingredients ::marker, .couscousingredients::marker, .directions ::marker {
+    color: #43664D;
+}
+
 .ingredients li, .couscousingredients li,  .directions li {
     line-height: 1.6;
 }
@@ -223,6 +234,8 @@ footer li {
 .ingredients, .couscousingredients, .directions {
     margin-top: 0;
 }
+
+
 
 /*  RATING */
 
@@ -305,6 +318,7 @@ footer li {
         grid-template-columns: 1fr;
         grid-template-areas: "header"
             "recipes-container"
+            "favorite-dish"
             "footer";
     }
 
@@ -427,7 +441,6 @@ footer li {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-
     h1 {
         font-size: 42px;
         margin-top: 20px;

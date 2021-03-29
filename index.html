@@ -10,7 +10,7 @@
 
 <body>
 <section class="grid-container-index">
-    <!--Header-->    <!--Menu Bar-->
+    <!--Header & Menu Bar-->
     <header>
         <h1>Karens Cookbook</h1>
         <p>A selection of Karens best alltime recipes.</p>
@@ -56,6 +56,16 @@
         </article>
     </section>
 
+<!--    What is your favorite dish? -->
+    <section class="favorite-dish">
+        <form id="favorite-dish-form">
+            <label for="favorite-dish-input">What is your favorite dish?</label>
+            <input type="text" id="favorite-dish-input" placeholder="Favorite dish here"> <input type="submit" id="favorite-dish-submit" value="Submit">
+            <p id='favourite-dish-output'></p>
+        </form>
+
+    </section>
+
 <!--    Footer-->
     <footer>
         <h3>Connect with us!</h3>
@@ -70,6 +80,6 @@
         </form>
     </footer>
 </section>
-<script src="js/javascriptindex.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
