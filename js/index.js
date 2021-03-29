@@ -20,7 +20,6 @@ function validateEmail(event) {
 elNewsLetterForm.addEventListener('change', validateEmail);
 
 
-
 // Localstorage function
 function favoriteDish(event) {
     let input = elFavoriteDishInput.value;

@@ -4,11 +4,10 @@ const elNewsletterOutput = document.querySelector('#newsletterOutput');
 const elRatingForm = document.querySelector('.rating');
 const elStars = document.querySelectorAll('input[name="star"]');
 const elRatingOutput = document.querySelector('#rating-output');
-// const elSubmitRating = document.querySelector('#submit-rating');
 const url = 'data/data.json';
 const ul = document.querySelector('.couscousingredients');
 
-
+// Output for rating stars
 function ratingOutput(event) {
     for(let i = 0; i < elStars.length; i++) {
         if(elStars[i].checked) {
@@ -19,6 +18,10 @@ function ratingOutput(event) {
     event.preventDefault();
 }
 
+elRatingForm.addEventListener('change', ratingOutput);
+
+
+// Newsletter validation
 function validateEmail(event) {
     let email = elEmail.value;
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -31,11 +34,10 @@ function validateEmail(event) {
 }
 
 elNewsLetterForm.addEventListener('change', validateEmail);
-elRatingForm.addEventListener('change', ratingOutput);
 
 
-/* FETCH */
 
+// Fetch ingredient data from json file and insert in an ul on the page
 fetch(url)
     .then(res => res.json())
     .then(data => console.log(data))
@@ -55,7 +57,6 @@ fetch(url)
     .then(data => {
         console.log(data.ingredients);
         let ingredients = data.ingredients;
-
 
         return ingredients.map(ingredient => {
             let li = createNode('li');
