@@ -163,11 +163,8 @@ footer li {
 
 .favorite-dish {
     grid-area: favorite-dish;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
     text-align: center;
-    width: 100%;
     margin: 0 auto 20px;
     background-color: #FFF5E8;
 
