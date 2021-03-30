@@ -4,6 +4,7 @@ const elFavoriteDishOutput = document.querySelector('#favourite-dish-output');
 const elNewsLetterForm = document.querySelector('#newsletterForm');
 const elEmail = document.querySelector('#email');
 const elNewsletterOutput = document.querySelector('#newsletterOutput');
+const favorite = 'favorite-dish';
 
 // Newsletter validation
 function validateEmail(event) {
@@ -22,14 +23,22 @@ elNewsLetterForm.addEventListener('change', validateEmail);
 
 // Localstorage function
 function favoriteDish(event) {
-    let input = elFavoriteDishInput.value;
+    const input = elFavoriteDishInput.value;
     if(input === 'couscous') {
-        localStorage.setItem('couscous', 'We found a recipe for your favorite dish :) <a href="../couscous.html">Click here!</a>');
+        localStorage.removeItem(favorite);
+        localStorage.setItem(favorite, 'Your favorite dish is: ' + input +'. We found a recipe for your favorite dish :) <a href="../couscous.html">Click here!</a>');
     } else {
-        localStorage.setItem(input, 'We do not have a recipe for this dish');
+        localStorage.removeItem(favorite);
+        localStorage.setItem(favorite, 'Your favorite dish is: ' + input);
     }
-    elFavoriteDishOutput.innerHTML = localStorage.getItem(input);
+    elFavoriteDishOutput.innerHTML = localStorage.getItem(favorite);
     event.preventDefault();
 }
 
 elFavoriteDishForm.addEventListener('submit', favoriteDish);
+
+function loadPage() {
+    elFavoriteDishOutput.innerHTML = localStorage.getItem(favorite);
+}
+
+window.addEventListener('load', loadPage);
